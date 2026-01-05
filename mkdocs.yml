@@ -1,0 +1,173 @@
+site_name: Panduan Aplikasi Kurir SiAktif
+site_description: Dokumentasi lengkap untuk aplikasi kurir laundry SiAktif
+site_author: Team SiAktif
+
+use_directory_urls: false
+
+theme:
+  name: material
+  language: id
+
+  # Custom colors
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Ganti ke mode gelap
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Ganti ke mode terang
+
+  # Logo & Favicon
+  favicon: images/icon.png
+  logo: images/icon.png
+
+  # Navigation & Features
+  features:
+    # Navigation
+    - navigation.instant          # Instant loading (SPA-like)
+    - navigation.instant.progress # Progress bar saat loading
+    - navigation.tracking         # URL auto-update saat scroll
+    - navigation.tabs             # Tabs di top
+    - navigation.tabs.sticky      # Sticky tabs
+    - navigation.sections         # Section di sidebar
+    - navigation.expand           # Auto-expand sections
+    - navigation.path             # Breadcrumbs
+    - navigation.indexes          # Section index pages
+    - navigation.top              # Back to top button
+    - navigation.footer           # Previous/Next navigation di footer
+
+    # Search
+    - search.suggest              # Search suggestions
+    - search.highlight            # Highlight search results
+    - search.share                # Share search results
+
+    # Table of Contents
+    - toc.follow                  # TOC follows scroll
+    - toc.integrate               # TOC integrated in navigation
+
+    # Content
+    - content.code.copy           # Copy button untuk code blocks
+    - content.code.annotate       # Annotations di code blocks
+    - content.tabs.link           # Link content tabs
+    - content.tooltips            # Tooltips untuk abbreviations
+
+# Navigation structure
+nav:
+  - Beranda: index.md
+  - Memulai:
+      - Cara Install Aplikasi: instalasi.md
+      - Login & Autentikasi: autentikasi.md
+      - Navigasi Aplikasi: navigasi.md
+  - Menu Utama:
+      - Beranda: menu-utama/beranda.md
+      - Aktifitas: menu-utama/aktifitas.md
+      - Rute: menu-utama/rute.md
+      - Chat: menu-utama/chat.md
+      - Pengaturan: menu-utama/pengaturan.md
+  - Panduan Fitur:
+      - Cara Jemput Pesanan: panduan-fitur/jemput-pesanan.md
+      - Cara Antar Pesanan: panduan-fitur/antar-pesanan.md
+      - Upload Bukti Pembayaran: panduan-fitur/upload-bukti.md
+      - Navigasi Rute: panduan-fitur/navigasi-rute.md
+      - Menggunakan Chat: panduan-fitur/menggunakan-chat.md
+      - Edit Profile & Set Lokasi: panduan-fitur/edit-profile.md
+  - Referensi:
+      - Tips & Trik: tips-trik.md
+      - FAQ: faq.md
+
+# Markdown Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr                          # Abbreviations
+  - admonition                    # Callouts/alerts
+  - attr_list                     # Add HTML attributes
+  - def_list                      # Definition lists
+  - footnotes                     # Footnotes
+  - md_in_html                    # Markdown in HTML
+  - toc:                          # Table of contents
+      permalink: true             # Permalink di headers
+      toc_depth: 3                # Depth level
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:          # Math equations
+      generic: true
+  - pymdownx.betterem:            # Better emphasis
+      smart_enable: all
+  - pymdownx.caret                # Superscript
+  - pymdownx.mark                 # Highlight text
+  - pymdownx.tilde                # Subscript & strikethrough
+  - pymdownx.critic               # Track changes
+  - pymdownx.details              # Collapsible blocks
+  - pymdownx.emoji:               # Emoji support
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:           # Code highlighting
+      anchor_linenums: true       # Anchor line numbers
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite         # Inline code highlighting
+  - pymdownx.keys                 # Keyboard keys
+  - pymdownx.smartsymbols         # Smart symbols
+  # - pymdownx.snippets:            # Include files
+  #     auto_append:
+  #       - includes/abbreviations.md
+  - pymdownx.superfences:         # Nested code blocks
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:              # Content tabs
+      alternate_style: true
+  - pymdownx.tasklist:            # Task lists
+      custom_checkbox: true
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-\.,;:!?]+'
+  - offline                       # Offline support
+
+# Extra configuration
+extra:
+  # Social links
+  social:
+    - icon: fontawesome/brands/whatsapp
+      link: https://wa.me/6282156912202
+      name: WhatsApp Admin
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@aktiflaundry.com
+      name: Email Support
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/aktif_laundry/
+      name: Instagram
+
+  # Analytics (optional - uncomment jika mau pakai)
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+
+  # Generator notice
+  generator: false                # Hide "Made with Material for MkDocs"
+
+# Copyright
+copyright: |
+  Copyright &copy; 2026 PT. Aktif Gapura Internasional.
+
+# Custom CSS (optional)
+# extra_css:
+#   - stylesheets/extra.css
+
+# Custom JavaScript (optional)
+# extra_javascript:
+#   - javascripts/extra.js
