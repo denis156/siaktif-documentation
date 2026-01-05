@@ -1,6 +1,7 @@
 site_name: Panduan Aplikasi Kurir SiAktif
 site_description: Dokumentasi lengkap untuk aplikasi kurir laundry SiAktif
 site_author: Team SiAktif
+site_url: https://denis156.github.io/siaktif-documentation/
 
 use_directory_urls: false
 

@@ -1,6 +1,20 @@
 # 📚 Dokumentasi Aplikasi Kurir SiAktif
 
+<div align="center">
+
+[![Documentation](https://img.shields.io/badge/docs-live-success?style=for-the-badge&logo=readthedocs&logoColor=white)](https://denis156.github.io/siaktif-documentation/)
+[![MkDocs](https://img.shields.io/badge/MkDocs-Material-blue?style=for-the-badge&logo=materialformkdocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](#)
+
+</div>
+
 Dokumentasi lengkap untuk aplikasi kurir laundry SiAktif - Platform digital yang memudahkan kurir dalam mengelola pesanan, navigasi, dan komunikasi dengan admin & pelanggan.
+
+## 🚀 Live Documentation
+
+**📖 Akses dokumentasi online:** **[https://denis156.github.io/siaktif-documentation/](https://denis156.github.io/siaktif-documentation/)**
+
+Dokumentasi di-deploy otomatis menggunakan GitHub Actions setiap kali ada perubahan di branch `main`.
 
 ## 🌟 Tentang Proyek
 
@@ -15,6 +29,17 @@ Dokumentasi ini dibuat menggunakan **[MkDocs Material](https://squidfunk.github.
 - 📴 **Offline Support** - Bisa diakses tanpa internet setelah pertama kali dibuka
 - 🗺️ **Navigasi Intuitif** - Tabs, breadcrumbs, dan table of contents
 - 💬 **Interactive** - Grid cards, admonitions, tabs, dan code blocks
+
+## 📸 Preview
+
+Kunjungi [Live Documentation](https://denis156.github.io/siaktif-documentation/) untuk melihat tampilan lengkap dokumentasi.
+
+**Fitur Unggulan:**
+- ✨ Grid cards dengan Material icons
+- 🎨 Admonitions untuk highlight informasi penting
+- 📑 Content tabs untuk konten alternatif
+- 🌙 Dark mode support
+- 📱 Fully responsive design
 
 ## 🛠️ Tech Stack
 
@@ -44,8 +69,8 @@ pip install mkdocs-material
 ### 2. Clone Repository
 
 ```bash
-git clone <repository-url>
-cd siaktif
+git clone https://github.com/denis156/siaktif-documentation.git
+cd siaktif-documentation
 ```
 
 ### 3. Jalankan Development Server
@@ -169,6 +194,58 @@ Untuk layout features:
 </div>
 ```
 
+## 🚢 Deployment
+
+Dokumentasi ini menggunakan **GitHub Actions** untuk auto-deployment ke GitHub Pages.
+
+### Automatic Deployment (Sudah Setup)
+
+✅ CI/CD sudah dikonfigurasi di `.github/workflows/ci.yml`
+
+Setiap kali ada push ke branch `main`, GitHub Actions akan:
+1. Build dokumentasi menggunakan `mkdocs build`
+2. Deploy otomatis ke branch `gh-pages`
+3. Dokumentasi tersedia di: [https://denis156.github.io/siaktif-documentation/](https://denis156.github.io/siaktif-documentation/)
+
+### Manual Deployment (Jika Diperlukan)
+
+Jika ingin deploy manual:
+
+```bash
+# Build dan deploy ke GitHub Pages
+mkdocs gh-deploy
+
+# Atau build saja tanpa deploy
+mkdocs build
+```
+
+### Setup GitHub Pages (First Time)
+
+Jika baru pertama kali setup:
+
+1. Push repository ke GitHub
+2. Buka **Settings** → **Pages**
+3. **Source**: Deploy from a branch
+4. **Branch**: Pilih `gh-pages` → `/` (root)
+5. Klik **Save**
+6. Tunggu beberapa menit, docs akan live di `https://denis156.github.io/siaktif-documentation/`
+
+## 🤝 Contributing
+
+Kontribusi sangat diterima! Jika ingin berkontribusi:
+
+1. Fork repository ini
+2. Buat branch baru (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buat Pull Request
+
+### Reporting Issues
+
+Jika menemukan bug atau punya saran:
+- Buka issue di [GitHub Issues](https://github.com/denis156/siaktif-documentation/issues)
+- Atau hubungi tim development via email
+
 ## 📞 Kontak
 
 **PT. Aktif Gapura Internasional**
@@ -176,6 +253,7 @@ Untuk layout features:
 - 💬 **WhatsApp:** [+6282156912202](https://wa.me/6282156912202)
 - 📧 **Email:** [support@aktiflaundry.com](mailto:support@aktiflaundry.com)
 - 📱 **Instagram:** [@aktif_laundry](https://www.instagram.com/aktif_laundry/)
+- 🌐 **Documentation:** [https://denis156.github.io/siaktif-documentation/](https://denis156.github.io/siaktif-documentation/)
 
 ## 📄 License
 

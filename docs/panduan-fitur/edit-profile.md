@@ -6,7 +6,7 @@ Panduan lengkap mengelola profil dan mengatur lokasi rumah Anda.
 
 ---
 
-## :material-image-edit: Upload Avatar
+## :material-account-circle: Upload Avatar
 
 !!! info "Cara Upload Foto Profil"
 
@@ -22,7 +22,7 @@ Panduan lengkap mengelola profil dan mengatur lokasi rumah Anda.
 
 ---
 
-## :material-account-edit-outline: Edit Nama
+## :material-pencil: Edit Nama
 
 !!! tip "Ubah Nama Lengkap"
 
@@ -33,7 +33,7 @@ Panduan lengkap mengelola profil dan mengatur lokasi rumah Anda.
 
 ---
 
-## :material-phone-edit: Edit Nomor HP
+## :material-cellphone: Edit Nomor HP
 
 !!! tip "Ubah Nomor Telepon"
 
@@ -50,7 +50,7 @@ Panduan lengkap mengelola profil dan mengatur lokasi rumah Anda.
 
 ---
 
-## :material-email-edit: Edit Email
+## :material-email: Edit Email
 
 !!! tip "Ubah Email"
 
@@ -82,7 +82,7 @@ Panduan lengkap mengelola profil dan mengatur lokasi rumah Anda.
 
 <div class="grid cards" markdown>
 
--   :material-sign-real-estate:{ .lg .middle } **Pilih Kecamatan**
+-   :material-city:{ .lg .middle } **Pilih Kecamatan**
 
     ---
 
@@ -175,7 +175,7 @@ Panduan lengkap mengelola profil dan mengatur lokasi rumah Anda.
 
 ---
 
-## :material-text-box-check: Preview Alamat Lengkap
+## :material-check-circle: Preview Alamat Lengkap
 
 !!! note "Format Alamat"
     Setelah simpan, alamat akan ditampilkan dalam format:
